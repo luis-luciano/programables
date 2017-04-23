@@ -1,0 +1,5 @@
+_loop: CODE, 1900 0 142
+_main: CODE, 1868 0 7
+__initialization: CODE, 2042 0 2
+_setup: CODE, 1875 0 25
+Total: 176

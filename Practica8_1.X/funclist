@@ -1,0 +1,10 @@
+_loop: CODE, 1859 0 182
+___ftpack: CODE, 1594 0 96
+_main: CODE, 1400 0 7
+__initialization: CODE, 2041 0 3
+_setup: CODE, 1439 0 35
+_convertir: CODE, 1533 0 61
+___awtoft: CODE, 1407 0 32
+___ftge: CODE, 1474 0 59
+___ftdiv: CODE, 1690 0 169
+Total: 644

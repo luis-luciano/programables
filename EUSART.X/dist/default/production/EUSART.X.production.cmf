@@ -1,0 +1,691 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+end_init CODE 0 2 2 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production\EUSART.X.production.obj
+cinit CODE 0 7F0 7F0 10 2
+text15 CODE 0 5E4 5E4 1D 2
+text14 CODE 0 5AC 5AC E 2
+text13 CODE 0 6CA 6CA 6B 2
+text12 CODE 0 585 585 5 2
+text11 CODE 0 58F 58F 7 2
+text10 CODE 0 62F 62F 30 2
+text9 CODE 0 596 596 7 2
+text8 CODE 0 58A 58A 5 2
+text7 CODE 0 5CE 5CE 16 2
+text6 CODE 0 694 694 36 2
+text5 CODE 0 601 601 2E 2
+text4 CODE 0 735 735 BB 2
+text3 CODE 0 65F 65F 35 2
+text2 CODE 0 5BA 5BA 14 2
+text1 CODE 0 5A4 5A4 8 2
+maintext CODE 0 59D 59D 7 2
+cstackBANK0 BANK0 1 20 20 11 1
+cstackCOMMON COMMON 1 70 70 E 1
+bssBANK0 BANK0 1 31 31 C 1
+stringtext STRCODE 0 800 800 21 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0003D-0006F 1
+BANK1 000A0-000EF 1
+BANK2 00120-0016F 1
+BANK3 001A0-001EF 1
+BANK4 00220-0026F 1
+BANK5 002A0-002EF 1
+BANK6 00320-0032F 1
+BIGRAM 02000-021EF 1
+CODE 00004-00584 2
+CODE 00821-01FFF 2
+CONST 00004-00584 2
+CONST 00821-01FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00004-00584 2
+ENTRY 00821-01FFF 2
+IDLOC 08000-08003 2
+RAM 0003D-0006F 1
+RAM 000A0-000EF 1
+RAM 00120-0016F 1
+RAM 001A0-001EF 1
+RAM 00220-0026F 1
+RAM 002A0-002EF 1
+RAM 00320-0032F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-0019F 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0021F 1
+SFR5 00280-0029F 1
+SFR6 00300-0031F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 0201D-021EF 1
+STRCODE 00004-00584 2
+STRCODE 00821-01FFF 2
+STRING 00004-00584 2
+STRING 00821-01FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\EUSART.X.production.obj
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":56 585 text12 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":57 585 text12 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":45 58A text8 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":46 58B text8 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":47 58E text8 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":39 58F text11 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":41 58F text11 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":42 594 text11 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":33 596 text9 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":34 596 text9 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":35 599 text9 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":36 59B text9 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":66 59D maintext CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":67 59D maintext CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":68 5A0 maintext CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":70 5A2 maintext CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":35 5A4 text1 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":36 5A4 text1 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":37 5A9 text1 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":38 5AB text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c":8 5AC text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c":14 5AD text14 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":11 5BA text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":12 5BA text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":13 5BC text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":14 5BD text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":15 5BE text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":16 5BF text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":17 5C0 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":18 5C1 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":19 5C3 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":20 5C5 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":21 5C6 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":22 5C8 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":23 5C9 text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":24 5CA text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":25 5CC text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":26 5CD text2 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":49 5CE text7 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":51 5CF text7 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":52 5D5 text7 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":53 5DC text7 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":54 5E2 text7 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\usart.c":53 5E3 text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":15 5E4 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":43 5E4 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":45 5E6 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":46 5E8 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":47 5EC text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":48 5F1 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":49 5F6 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":52 5FA text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":6 601 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":13 601 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":14 605 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":15 607 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":16 609 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":17 60E text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":15 612 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":20 613 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":21 61B text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":22 61F text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":23 624 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":25 628 text5 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":41 62F text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":42 62F text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":44 631 text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":45 637 text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":46 63E text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":48 642 text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":49 64E text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":50 64F text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":51 654 text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":52 65E text10 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":53 65F text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":54 65F text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":55 65F text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":56 668 text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":57 66E text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":58 672 text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":59 675 text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":60 67B text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":61 689 text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":62 68F text3 CODE
+"C:\Users\toshiba\MPLABXProjects\EUSART.X\principalEUSART.c":54 693 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":6 694 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 694 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 696 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 69A text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 69C text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 69E text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 6A3 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 6A7 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 6A8 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 6AD text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 6B5 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 6B9 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 6BA text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 6BF text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 6C3 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":5 6CA text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":10 6CB text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":11 6D2 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":10 6D6 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":12 6DE text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":13 6E0 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":14 6E1 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":15 6E8 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":17 6ED text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":20 6F4 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":19 6F8 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":20 701 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":19 71E text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":21 71F text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":22 722 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":23 72E text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":492 735 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":542 737 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":545 73B text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":547 74D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":550 751 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":551 75C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":557 75D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":644 75E text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":827 75F text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":831 763 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":644 764 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1295 778 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1314 783 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1315 789 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1314 7A0 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1481 7A8 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1483 7AC text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1498 7B4 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1533 7DF text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1483 7EA text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c":1547 7EB text4 CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":848 7F0 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":851 7F0 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":865 7F0 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":866 7F1 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":867 7F2 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":868 7F3 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":869 7F4 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":870 7F5 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":871 7F6 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":872 7F7 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":873 7F8 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":874 7F9 cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":875 7FA cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":876 7FB cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":882 7FC cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":883 7FC cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":884 7FD cinit CODE
+"C:\Users\toshiba\AppData\Local\Temp\s17k.":885 7FE cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+sprintf@f 20 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__end_of_loop D28 0 CODE 0 text3 dist/default/production\EUSART.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 4 0 CODE 0 intentry -
+__Lintentry 4 0 CODE 0 intentry -
+_num 31 0 BANK0 1 bssBANK0 dist/default/production\EUSART.X.production.obj
+__size_of_loop 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+leerEusart@c 21 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+_main B3A 0 CODE 0 maintext dist/default/production\EUSART.X.production.obj
+_atoi D94 0 CODE 0 text13 dist/default/production\EUSART.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+btemp 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_loop CBE 0 CODE 0 text3 dist/default/production\EUSART.X.production.obj
+start 4 0 CODE 0 init C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+readEUSART@data 71 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+_RCREG 199 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_RCSTA 19D 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_TXREG 19A 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+_SPBRG 19B 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_TXSTA 19E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+atoi@a 7B 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+atoi@s 7D 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+?_atoi 76 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+atoi@sign 7A 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__end_of__stringdata 1042 0 STRCODE 0 stringtext dist/default/production\EUSART.X.production.obj
+_setup B48 0 CODE 0 text1 dist/default/production\EUSART.X.production.obj
+?_sprintf 20 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+writeEUSART@data 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits 11 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+sprintf@ap 29 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__size_of_openEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__end_of_busyEUSART B3A 0 CODE 0 text9 dist/default/production\EUSART.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__size_of_busyEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__end_of_dpowers 1014 0 STRCODE 0 stringtext dist/default/production\EUSART.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 21EF 0 ABS 0 - C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+sprintf@sp 2F 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+_buffer 33 0 BANK0 1 bssBANK0 dist/default/production\EUSART.X.production.obj
+stacklo 201D 0 ABS 0 - C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+__Hinit 4 0 CODE 0 init -
+__Linit 4 0 CODE 0 init -
+___wmul BC8 0 CODE 0 text15 dist/default/production\EUSART.X.production.obj
+__end_of_main B48 0 CODE 0 maintext dist/default/production\EUSART.X.production.obj
+leerEusart@i 22 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\EUSART.X.production.obj
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__size_of_dataRdyEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__size_of_leerEusart 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_TRISCbits 8E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__end_of_atoi E6A 0 CODE 0 text13 dist/default/production\EUSART.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__end_of_dataRdyEUSART B14 0 CODE 0 text12 dist/default/production\EUSART.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 ABS 0 bank6 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__ptext1 B48 0 CODE 0 text1 dist/default/production\EUSART.X.production.obj
+__ptext2 B74 0 CODE 0 text2 dist/default/production\EUSART.X.production.obj
+__ptext3 CBE 0 CODE 0 text3 dist/default/production\EUSART.X.production.obj
+__ptext4 E6A 0 CODE 0 text4 dist/default/production\EUSART.X.production.obj
+__ptext5 C02 0 CODE 0 text5 dist/default/production\EUSART.X.production.obj
+__ptext6 D28 0 CODE 0 text6 dist/default/production\EUSART.X.production.obj
+__ptext7 B9C 0 CODE 0 text7 dist/default/production\EUSART.X.production.obj
+__end_of_readEUSART B2C 0 CODE 0 text11 dist/default/production\EUSART.X.production.obj
+__ptext8 B14 0 CODE 0 text8 dist/default/production\EUSART.X.production.obj
+__ptext9 B2C 0 CODE 0 text9 dist/default/production\EUSART.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+_readEUSART B1E 0 CODE 0 text11 dist/default/production\EUSART.X.production.obj
+_openEUSART B74 0 CODE 0 text2 dist/default/production\EUSART.X.production.obj
+_putsEUSART B9C 0 CODE 0 text7 dist/default/production\EUSART.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\EUSART.X.production.obj
+_busyEUSART B2C 0 CODE 0 text9 dist/default/production\EUSART.X.production.obj
+_BAUDCONbits 19F 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__end_of___lwdiv D94 0 CODE 0 text6 dist/default/production\EUSART.X.production.obj
+putsEUSART@buffer 71 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+___lwmod C02 0 CODE 0 text5 dist/default/production\EUSART.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__size_of_putsEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_sprintf E6A 0 CODE 0 text4 dist/default/production\EUSART.X.production.obj
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__size_of_setup 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+_isdigit B58 0 CODE 0 text14 dist/default/production\EUSART.X.production.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FE0 0 CODE 0 cinit -
+__Hspace_3 0 0 ABS 0 - -
+___lwdiv D28 0 CODE 0 text6 dist/default/production\EUSART.X.production.obj
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_dpowers 1000 0 STRCODE 0 stringtext dist/default/production\EUSART.X.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__end_of_isdigit B74 0 CODE 0 text14 dist/default/production\EUSART.X.production.obj
+__end_of_sprintf FE0 0 CODE 0 text4 dist/default/production\EUSART.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__Hbank10 0 0 BANK10 1 bank10 -
+__pbssBANK0 31 0 BANK0 1 bssBANK0 dist/default/production\EUSART.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Lbank20 0 0 BANK20 1 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 BANK12 1 bank12 -
+sprintf@flag 28 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__end_of_openEUSART B9C 0 CODE 0 text2 dist/default/production\EUSART.X.production.obj
+__Hbank14 0 0 BANK14 1 bank14 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__pstringtext 1000 0 STRCODE 0 stringtext dist/default/production\EUSART.X.production.obj
+__ptext10 C5E 0 CODE 0 text10 dist/default/production\EUSART.X.production.obj
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__ptext11 B1E 0 CODE 0 text11 dist/default/production\EUSART.X.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__ptext12 B0A 0 CODE 0 text12 dist/default/production\EUSART.X.production.obj
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__ptext13 D94 0 CODE 0 text13 dist/default/production\EUSART.X.production.obj
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__size_of_readEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+sprintf@prec 2E 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+__Hbank28 0 0 BANK28 1 bank28 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__ptext14 B58 0 CODE 0 text14 dist/default/production\EUSART.X.production.obj
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__ptext15 BC8 0 CODE 0 text15 dist/default/production\EUSART.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__end_of___lwmod C5E 0 CODE 0 text5 dist/default/production\EUSART.X.production.obj
+___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hend_init 8 0 CODE 0 end_init -
+__Lend_init 4 0 CODE 0 end_init -
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__end_of_setup B58 0 CODE 0 text1 dist/default/production\EUSART.X.production.obj
+__end_of_leerEusart CBE 0 CODE 0 text10 dist/default/production\EUSART.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__stringdata 1014 0 STRCODE 0 stringtext dist/default/production\EUSART.X.production.obj
+__size_of_atoi 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_leerEusart C5E 0 CODE 0 text10 dist/default/production\EUSART.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+intlevel2 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+__size_of_writeEUSART 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+intlevel4 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+intlevel5 0 0 CODE 0 functab C:\Users\toshiba\AppData\Local\Temp\s17k.obj
+__end_of_putsEUSART BC8 0 CODE 0 text7 dist/default/production\EUSART.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__end_of___wmul C02 0 CODE 0 text15 dist/default/production\EUSART.X.production.obj
+__end_of_writeEUSART B1E 0 CODE 0 text8 dist/default/production\EUSART.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+start_initialization FE0 0 CODE 0 cinit dist/default/production\EUSART.X.production.obj
+___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__pmaintext B3A 0 CODE 0 maintext dist/default/production\EUSART.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_dataRdyEUSART B0A 0 CODE 0 text12 dist/default/production\EUSART.X.production.obj
+__initialization FE0 0 CODE 0 cinit dist/default/production\EUSART.X.production.obj
+_isdigit$469 70 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+sprintf@_val 2A 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+___lwmod@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+_writeEUSART B14 0 CODE 0 text8 dist/default/production\EUSART.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\EUSART.X.production.obj
+sprintf@c 30 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.X.production.obj
+isdigit@c 71 0 COMMON 1 cstackCOMMON dist/default/production\EUSART.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 2
+cinit 0 7F0 FE0 10 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 1D 1
+text4 0 735 E6A BB 2
+text13 0 6CA D94 6B 2
+text6 0 694 D28 36 2
+text3 0 65F CBE 35 2
+text10 0 62F C5E 30 2
+text5 0 601 C02 2E 2
+stringtext 0 800 1000 21 2
+text15 0 5E4 BC8 1D 2
+text7 0 5CE B9C 16 2
+text2 0 5BA B74 14 2
+text14 0 5AC B58 E 2
+text1 0 5A4 B48 8 2
+maintext 0 59D B3A 7 2
+text9 0 596 B2C 7 2
+text11 0 58F B1E 7 2
+text8 0 58A B14 5 2
+text12 0 585 B0A 5 2

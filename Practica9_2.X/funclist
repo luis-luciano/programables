@@ -1,0 +1,15 @@
+_loop: CODE, 1866 0 60
+_busyEUSART: CODE, 1704 0 7
+_main: CODE, 1711 0 7
+_atoi: CODE, 1926 0 107
+_dataRdyEUSART: CODE, 1681 0 5
+_readEUSART: CODE, 1697 0 7
+__initialization: CODE, 2033 0 11
+_isdigit: CODE, 1718 0 14
+_openEUSART: CODE, 1747 0 20
+_setup: CODE, 1732 0 15
+_leerEusart: CODE, 1818 0 48
+_putsEUSART: CODE, 1767 0 22
+___wmul: CODE, 1789 0 29
+_writeEUSART: CODE, 1686 0 5
+Total: 357

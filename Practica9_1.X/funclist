@@ -1,0 +1,16 @@
+_loop: CODE, 1832 0 205
+__stringdata: STRCODE, 2048 0 17
+_busyEUSART: CODE, 1128 0 7
+___ftpack: CODE, 1387 0 96
+_main: CODE, 1135 0 7
+__initialization: CODE, 2037 0 7
+_sprintf: CODE, 1310 0 77
+_openEUSART: CODE, 1142 0 20
+_setup: CODE, 1184 0 31
+___ftmul: CODE, 1652 0 180
+_convertir: CODE, 1247 0 63
+___awtoft: CODE, 1215 0 32
+_putsEUSART: CODE, 1162 0 22
+_writeEUSART: CODE, 1117 0 5
+___ftdiv: CODE, 1483 0 169
+Total: 938

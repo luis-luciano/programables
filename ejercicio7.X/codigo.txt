@@ -1,0 +1,28 @@
+void loop()
+{
+    while(1)
+    {
+          if(PORTA!=0)
+          {
+              nlets=PORTA;
+              for(c=0,aux=1;c<nlets;c++)
+              {
+                  aux=aux<<1;
+                  aux=aux|1;
+              }
+              rs=aux;
+              i=i<<nlets;
+              i=i|rs;
+              PORTB=i;
+          }
+          else
+          {
+              PORTB=i;
+              i=i<<1;
+              i=i|1;
+          }
+      if(PORTBbits.RB7)
+         i=1;
+      __delay_ms(1000);
+    }
+}
